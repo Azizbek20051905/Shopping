@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(10, 71, 111) 0%,
+    rgb(8, 126, 173) 35%,
+    rgb(9, 112, 132) 100%
+  );
+}
+.form_sigin_up,
+.form_sigin_in {
+  width: 400px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+.form_sigin_up,
+.form_sigin_in h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.form_sigin_up,
+.form_sigin_in input {
+  padding: 5px 10px;
+  border: 2px solid rgb(255, 255, 255);
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.form_sigin_up,
+.form_sigin_in button {
+  padding: 5px;
+  margin-top: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.form_sigin_up,
+.form_sigin_in button:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/registration/signin/register.css' %}" />
+  <title>my-Idea</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- register signin  -->
+
+    <form action="" method="post">
+      {% csrf_token %}
+
+      <div class="form_sigin_in">
+        <h2>sigin In</h2>
+
+          {% if messages %}
+            {% for m in messages %}
+              <h4 {% if  m.tags == 'warning' %}
+              style="color:red; text-align: center;"
+              {% else %}
+              style="color:green; text-align: center;"
+              {% endif  %}
+
+              class="text-{{ m.tags }}"> {{ m }} </h4>
+            {% endfor %}
+          {% endif %}
+
+        <label for="Username"> Entir Username</label>
+        <input id="Username" name='username' type="text" />
+
+        <label for="Email"> Entir Email</label>
+        <input id="Email" name='email' type="email" />
+
+        <label for="password"> Entir password</label>
+        <input id="password" name='password' type="password" />
+
+        <button type="submit">Save</button>
+        <h3 style="text-align: end;"><a href="register">Sign Up</a></h3>
+      </div>
+    </form>
+
+  </div>
+</body>
+  <script src="{% static 'js/registration/signin/register.js' %}"></script>
+</html>

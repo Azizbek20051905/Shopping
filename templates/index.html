@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>my-Idea</title>
+</head>
+<body>
+    <div class="loader">
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__ball"></div>
+    </div>
+    <div class="content">
+      <header>
+        <div class="container-fluid">
+          <div class="logo">
+            <img
+              src="../images/img/360_F_330347951_YygbqZo6O8anQ8uD89cHACxw7PcUFABd.jpg"
+              alt="logo"
+            />
+          </div>
+          <div class="search">
+            <img src="../images/img/search.png" alt="search icon" />
+            <input type="text" autocomplete="none" placeholder="search" />
+          </div>
+          <div class="register">
+            <div></div>
+            <div class="shoping">
+              <img src="../images/img/shopping-fun.png" alt="shopping icon" />
+            </div>
+            <a href="register">sigin up</a>
+            <a href="login">sigin in</a>
+          </div>
+        </div>
+      </header>
+      <div class="hero">
+        {% for category in category %}
+          <a href="{{ category.id }}">{{ category.name }}</a>
+        {% endfor %}
+      </div>
+      <div class="container">
+        <main id="main">
+        </main>
+        <div class="page"></div>
+      </div>
+    </div>
+</body>
+    <script src="{% static 'js/index.js' %}"></script>
+</html>
