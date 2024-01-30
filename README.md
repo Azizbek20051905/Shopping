@@ -1,6 +1,6 @@
 1. Siz bu dasturni ishga tushirishingiz uchun ushbu ketma-ketlikni bajaring:
        1.1. Eng avvalo virtual muhitga kirib olishingiz kerak.
-             Bunda shu commandani terminalga kiriting: ".\env\Scripts\activate"
+          Bunda shu commandani terminalga kiriting: ".\env\Scripts\activate"
        1.2. Buni ham terminalga kiriting: "python .\manage.py runserver"
        Shundan so'ng ishga tushadi. Keyin saytga shuni kiritasiz: http://127.0.0.1:8000/
        Saytga Kirib registratsiyadan o'tib olasiz bo'lmasa saytga kirmaydi.
