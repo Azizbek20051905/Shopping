@@ -1,4 +1,5 @@
 1. Siz bu dasturni ishga tushirishingiz uchun ushbu ketma-ketlikni bajaring:
+       Ushbu kiritish bo'lgan barchasini terminalda bajaring:
        1.1. Eng avvalo virtual muhitga kirib olishingiz kerak.
           Bunda shu commandani terminalga kiriting: ".\env\Scripts\activate"
        1.2. Buni ham terminalga kiriting: "python .\manage.py runserver"
